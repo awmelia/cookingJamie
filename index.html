@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home - Cooking with Jamie</title>
+    <meta charset="UTF-8" />
+    <link href="stylesheets/reset.css" rel="stylesheet" />
+    <link href="stylesheets/djupvik.css" rel="stylesheet" />
+    <meta name="viewport" content= "width = device-width, initial-scale = 1, maximum-scale = 2">
+    <meta name="description" content="Here the website, Cooking with Jamie, is presented and the navigation-options explained." />
+  </head>
+  
+  <body>
+    <div id="container"> 
+      <aside> <!--used because it is related to content in main but should be logically seperated as it is repeated in all pages of the site-->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle"> <!--Used for hamburger-nav-->
+        <nav> <!--is applied to present the main navigation of the site-->
+          <ul class="nav-ul" id="nav-ul">
+            <li><a href="#" id="activePage">Start</a></li>
+            <li><a href="html/recipes.html">Recipes</a></li>
+            <li><a href="html/about.html">About Jamie</a></li>
+            <li><a href="html/gallery.html">Gallery</a></li>
+            <li><a href="html/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <!--Used for hamburger-nav-->
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+        </label>
+        <header> <!--is applied to introduce the site-->
+          <div class="title"><h1>Cooking with Jamie</h1></div>
+        </header>
+      </aside>
+
+      <main>  <!--start of the main content of the page-->
+        <section class="s1"> <!--Start of section 1-->
+          <h2>Overall information</h2>
+          <p>Welcome to my website where I will make some of Jamie Olivers recipes from the Swedish edition of his book "5 Ingrediens - Quick and Easy food". You will also be able to read about Jamie Oliver and get accesss to links for more information. You will also be able to contact me with questions or similair concerns. </p>
+        </section> <!--End of section 1-->
+
+        <section class="s2"> <!--A new section is used because the dialog has shifted from information about the Djupvik as a whole to news-->
+          <h3>Recent Updates:</h3>
+          <article> <!--An article element is applied to present the different news within-->
+            <h4><br>The website has been created!</h4>
+            <h5><time datetime="2021-08-23">2021-08-23</time></h5>
+            <p>Welcome to my new project where I play around with different frontend and backend techniques in order to improve my knowledge within all areas of web developement</p>
+          </article> <!--End of article-->
+        </section> <!--End of section 2-->
+      </main> <!--End of main-->
+
+      <aside> <!--used because it is related to content in main but should be logically seperated as it is repeated in all pages of the site-->
+        <footer>
+          <hr>
+          <p> <!--Information about copyright-->
+            <small>© Copyright 2021 | Amelia Wilhelmsson | amelia.97@hotmail.se</small>
+          </p>
+        </footer>
+      </aside>
+      
+      <script type="module" src="./javaScript/hamburgare.js"></script>
+    </div> <!--end of container-->
+    
+  </body>
+</html>
