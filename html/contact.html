@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Contact - Cooking with Jamie</title>
+    <meta charset="UTF-8" />
+    <link href="../stylesheets/reset.css" rel="stylesheet" />
+    <link href="../stylesheets/djupvik.css" rel="stylesheet" />
+    <meta name="viewport" content= "width = device-width, initial-scale = 1, maximum-scale = 2">
+    <meta name="description" content="Here you get an opportunity to see all available contactinformation or the opportunity to fill in a form." />
+  </head>
+  
+  <body>
+    <div id="container"> 
+      <aside>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle"> 
+        <nav> 
+          <ul class="nav-ul" id="nav-ul">
+            <li><a href="../index.html">Start</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="about.html">About Jamie</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="#" id="activePage">Contact</a></li>
+          </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+        </label>
+        <header> 
+          <div class="title"><h1>Cooking with Jamie</h1></div>
+        </header>
+      </aside>
+
+      <main>  <!--start of the main content of the page-->
+        <article> <!--I created two different section as they are both ways to contact, but in different ways-->
+          <h2>Contact</h2>
+          <section class="s5">
+            <h3>Contactinformation</h3>
+            <p>
+              Amelia Wilhelmsson, mobil +4672-5413155 <br><br>
+              Lund University School of Economics and Management<br>
+              c/o Department of Informatics<br>
+              Tycho Brahes väg 1,<br>
+              223 63 Lund
+            </p>
+          </section> <!--End of section 1-->
+            
+          <section class="s6">
+            <h3>Contact form</h3>
+            <!--To ensure most importat fields gets answered properly-->
+            <p>Mandatory fields are marked with *.</p>
+            <form method="post" action="thanks.html">
+              <p>
+                <label for="Title">Title: </label>
+                <input type="text" name="title" id="Title" />
+              </p>
+              <p>
+                <label for="Explaination">Explain why you want contact*:</label>
+                <textarea name="explaination" id="Explaination" rows="5" cols="30"  required>
+                </textarea>
+              </p>
+              <p>
+                <label for="About">What is it concerning*:</label>
+                <select name="about" id="About">
+                  <option value="copyright">Copyright</option>
+                  <option value="layout">Layout of website</option>
+                  <option value="recipes">Existing recipes</option>
+                  <option value="other">Other</option>
+                </select>
+              </p>
+              <p> 
+                <label for="Email">E-mail*:</label>
+                <input type="email" name="email" id="Email" required />
+              </p>
+              <p> 
+                <input type="submit" value="Send"/>
+                <input type="reset" value="Clear all fields" />
+              </p>
+            </form> <!--End of form-->
+          </section> <!--End of section 2-->
+        </article> <!--End of article-->
+      </main> <!--End of main-->
+
+      <aside> 
+        <footer>
+          <hr>
+          <p> 
+            <small>© Copyright 2021 | Amelia Wilhelmsson | amelia.97@hotmail.se</small>
+          </p>
+        </footer>
+      </aside>
+
+      <script type="module" src="../JavaScript/hamburger.js"></script>
+    </div> <!--end of container-->
+  </body>
+</html>
